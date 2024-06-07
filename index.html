@@ -31,7 +31,7 @@
           <h3 class="content-item-title">ul,ol,li リスト</h3>
           <p class="content-item-text">リストを表すタグ</p>
 
-          <section  class="content-child-item">
+          <section class="content-child-item">
             <h4 class="content-child-item-title">ul</h4>
             <p class="content-item-text">順番が関係ないリスト</p>
             <ul>
@@ -67,7 +67,9 @@
 
         <section class="content-item">
           <h3 class="content-item-title">em, strong</h3>
-          <p class="content-item-text">emが強調を表す strongが強い重要性を表す</p>
+          <p class="content-item-text">
+            emが強調を表す strongが強い重要性を表す
+          </p>
           <p class="content-item-text">emは<em>強調</em>を表す</p>
           <p class="content-item-text">strongは<strong>重要性</strong>を表す</p>
         </section>
@@ -95,7 +97,116 @@
         <section class="content-item">
           <h3 class="content-item-title">a リンク</h3>
           <a href="https://google.com/">Google</a>
-        </article>
+        </section>
+      </article>
+
+      <article>
+        <h2 class="main-title">cssについて</h2>
+        <p class="main-text">Cascading Style Sheets</p>
+        <section class="menu-item">
+          <p class="content-item-title">メニュー</p>
+          <p>
+            <a href="https://www.webcreatorbox.com/tech/css-flexbox-cheat-sheet"
+              >Flexbox チートシート</a
+            >
+          </p>
+          <ul class="menu">
+            <li class="menu-list"><a href="https://x.com/">x</a></li>
+            <li class="menu-list">
+              <a href="https://www.instagram.com">Instagram</a>
+            </li>
+            <li class="menu-list">
+              <a href="https://ja-jp.facebook.com/">Facebook</a>
+            </li>
+          </ul>
+        </section>
+        <section class="content-item">
+          <h3 class="content-item-title">
+            marginとpaddingとborderと幅について
+          </h3>
+          <p class="content-item-text">
+            基本的にはwidth + padding + borderの大きさになる
+          </p>
+          <p class="content-item-text">
+            ただしborder-sizing:
+            border-box;が指定されてる場合はwidthの幅になる。（widthの内側にborderとpaddingが入る）
+          </p>
+          <p class="content-item-text">
+            下記のように全てのタグに対して当てちゃっても良い。
+          </p>
+          <pre>
+            *{ box-sizing: border-box; }
+          </pre>
+          <p class="box1">テキスト</p>
+          <p class="box2">テキスト</p>
+        </section>
+        <section class="content-item">
+          <h3 class="content-item-title">記事</h3>
+
+          <div class="entry-container">
+            <section class="entry">
+              <h4 class="entry-title"><a href="">タイトル</a></h4>
+              <p class="entry-img">
+                <img
+                  src="https://aipict.com/wp-content/uploads/2022/09/sky02.png"
+                  alt=""
+                />
+              </p>
+              <ul class="entry-category">
+                <li class="entry-category-item">カテゴリー</li>
+              </ul>
+              <p class="entry-text">記事の説明</p>
+            </section>
+            <section class="entry">
+              <h4 class="entry-title"><a href="">タイトル</a></h4>
+              <p class="entry-img">
+                <img
+                  src="https://aipict.com/wp-content/uploads/2022/09/sky02.png"
+                  alt=""
+                />
+              </p>
+              <ul class="entry-category">
+                <li class="entry-category-item">カテゴリー</li>
+              </ul>
+              <p class="entry-text">記事の説明</p>
+            </section>
+            <section class="entry">
+              <h4 class="entry-title"><a href="">タイトル</a></h4>
+              <p class="entry-img">
+                <img
+                  src="https://aipict.com/wp-content/uploads/2022/09/sky02.png"
+                  alt=""
+                />
+              </p>
+              <ul class="entry-category">
+                <li class="entry-category-item">カテゴリー</li>
+              </ul>
+              <p class="entry-text">記事の説明</p>
+            </section>
+          </div>
+        </section>
+
+        <section>
+          <h3>flexでの真ん中よせ</h3>
+          <p class="entry-text">
+            justify-content: center;かalign-items: center;を使う
+          </p>
+          <p class="entry-text">
+            ただし注意が必要で、flex-directionの方向によって、方向変わる
+          </p>
+
+          <div class="flex-container column">
+            <!--class半角スペースで複数作れる-->
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+          </div>
+          <div class="flex-container row">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+          </div>
+        </section>
       </article>
     </main>
 
