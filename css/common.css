@@ -116,7 +116,7 @@ main-title {
   margin: 8px;
   padding: 8px;
   list-style-type: none;
-  background-color: #333;
+  background-color: #99c5d0;
   color: #fff;
   display: inline-block;
 }
@@ -136,7 +136,7 @@ main-title {
   height: 500px;
   display: flex;
   gap: 18px;
-  background-color: black;
+  background-color: rgb(95, 152, 162);
   justify-content: center;
 }
 .column {
@@ -145,5 +145,45 @@ main-title {
 .flex-item {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: rgb(136, 204, 227);
+}
+.entry-card {
+  padding: 16px;
+  display: grid;
+  grid-template:
+    "entry-card-img entry-card-title" auto
+    "entry-card-img entry-card-description" 1fr
+    "entry-card-img entry-card-more" auto
+    / 300px 1fr;
+  row-gap: 8px;
+  column-gap: 16px;
+}
+/*gap：真ん中の空白*/
+/*templateで決めた位置の配置をgrid-areaで指定する*/
+.entry-card-img {
+  grid-area: entry-card-img;
+}
+.entry-card-img img {
+  width: 100%;
+}
+.entry-card-title {
+  grid-area: entry-card-title;
+}
+.entry-card-description {
+  grid-area: entry-card-description;
+}
+.entry-card-more a {
+  grid-area: entry-card-more;
+  padding: 16px;
+
+  display: block;
+  background-color: #74c3d5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px; /*border-radius:ボタンの角丸くするタグ*/
+  min-width: 50px;
+  text-align: center;
+}
+.entry-card-more a:hover {
+  background-color: #20ecff; /*カーソルを合わせると色が変わる*/
 }

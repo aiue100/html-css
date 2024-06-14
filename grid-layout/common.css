@@ -1,0 +1,34 @@
+.app {
+  display: grid;
+  grid-template:
+    "header header" auto
+    "nav contents" 1fr
+    "footer footer" auto
+    / 300px 1fr;
+}
+.main {
+  /* display: grid;
+  grid-template:
+    "nav contents" auto
+    / 200px 1fr; */
+
+  /* display: none;は子供にも適用される、contentsはそのタグだけ無かったことに */
+  display: contents;
+}
+.header {
+  background-color: #ff56a5;
+  grid-area: header;
+}
+.nav {
+  margin: 0;
+  grid-area: nav;
+  background-color: rgb(255, 204, 239);
+}
+.main-contents {
+  grid-area: contents;
+  background-color: rgb(255, 168, 210);
+}
+.footer {
+  background-color: rgb(255, 161, 196);
+  grid-area: footer;
+}
