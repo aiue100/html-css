@@ -187,3 +187,48 @@ main-title {
 .entry-card-more a:hover {
   background-color: #20ecff; /*カーソルを合わせると色が変わる*/
 }
+.fixed a {
+  width: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  background-color: rgb(255, 0, 153);
+  padding: 16px;
+  z-index: 1; /*数が大きければ大きいほど重ね順が上になる*/
+}
+.fixed a {
+  color: #ffffff;
+} /*固定されたところの文字の色変えられる*/
+.relative {
+  position: relative;
+  bottom: -20px;
+  left: 100px;
+  background-color: rgb(255, 0, 0);
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  padding: 16px;
+}
+.absolutewapper {
+  position: relative;
+  height: 200px;
+}
+.absolute {
+  position: absolute;
+  background-color: blue;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  padding: 16px;
+}
+.new {
+  position: absolute;
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
+  color: #ff0000;
+}
