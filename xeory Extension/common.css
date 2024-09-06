@@ -54,9 +54,7 @@
   font-size: 14px;
   margin: 20px;
 }
-.main-container {
-  margin-bottom: 20px;
-}
+
 .entry {
   border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
@@ -71,6 +69,7 @@
   flex-direction: column-reverse;
   margin: 0 8px;
   max-width: 211px;
+  position: relative;
 }
 
 .entry-item-wrap img {
@@ -113,18 +112,20 @@
 }
 .entry-item-number {
   position: absolute;
-  padding: 10px;
+  top: 0;
   background-color: rgba(218, 165, 32, 0.396);
-  top: 800px;
+
   color: #fff;
-  height: 40px;
+
   display: flex;
+  padding: 5px;
+  height: 35px;
 }
 .entry-date {
   position: absolute;
   padding: 5px;
   background-color: #373344c1;
-  top: 1200px;
+  top: 0;
   color: #fff;
 }
 .contents-title {
@@ -169,6 +170,8 @@
   column-gap: 90px;
 
   overflow: hidden;
+}
+.feature-item:not(:first-of-type) {
   border-top: 2px solid #ccc;
 }
 
@@ -302,6 +305,45 @@
   justify-content: space-between;
   align-items: center;
 }
+.inquiry {
+  background-color: #47b39d;
+  color: #fff;
+  text-align: center;
+}
+.inquiry-name {
+  margin-top: 40px;
+}
+.input-name {
+  padding-bottom: 15px;
+}
+.input-subject {
+  padding-bottom: 15px;
+}
+.input-email {
+  padding-bottom: 15px;
+}
+.input-title {
+  padding-bottom: 15px;
+}
+.input-message {
+  padding-bottom: 15px;
+}
+.inquiry-send-button {
+  padding-bottom: 40px;
+}
+.inquiry-send-button input {
+  background-color: #3b4552;
+  color: #fff;
+  width: 10%;
+}
+.inquiry input {
+  border-radius: 3px;
+  border: none;
+}
+.inquiry textarea {
+  border-radius: 3px;
+  border: none;
+}
 .footer {
   background-color: #031731;
   color: #fff;
@@ -342,4 +384,7 @@
   color: #fff;
   font-size: 13px;
   text-align: center;
+}
+.triangle {
+  padding-right: 5px;
 }
