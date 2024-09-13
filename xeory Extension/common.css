@@ -17,14 +17,28 @@
 .header-nav-item a {
   padding: 20px;
   display: block;
-  background-color: #47b39d;
+
   color: #fff;
   text-decoration: none;
-
   text-align: center;
 }
 .header-nav-item a:hover {
   background-color: #ffffff38;
+}
+
+.menu-button {
+  display: none;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  background-color: #3b4552;
+}
+.menu-button svg {
+  width: 32px;
+  height: 32px;
+}
+.menu-button:hover + .header-nav {
+  display: block;
 }
 
 .header-nav {
@@ -32,6 +46,27 @@
   list-style-type: none;
   gap: 45px;
   display: flex;
+}
+@media (width<750px) {
+  .header-nav {
+    display: none;
+    position: absolute;
+    background-color: #3b4552;
+    top: 64px;
+    left: 0;
+    right: 0;
+  }
+  .header-nav:hover {
+    display: block;
+  }
+  .header-nav-item a {
+    padding: 16px;
+    text-align: left;
+    font-size: 13px;
+  }
+  .menu-button {
+    display: grid;
+  }
 }
 .main-discription-container {
   background-color: #47b39d;
@@ -80,6 +115,16 @@
   display: flex;
   margin: 40px;
 }
+@media (width<750px) {
+  .entry-item {
+    margin: 20px 0;
+    max-width: none;
+  }
+  .entry-item-wrap {
+    margin: 32px 16px;
+    display: block;
+  }
+}
 .entry-item-category {
   background-color: #47b39d;
   color: #fff;
@@ -114,12 +159,10 @@
   position: absolute;
   top: 0;
   background-color: rgba(218, 165, 32, 0.396);
-
   color: #fff;
-
   display: flex;
   padding: 5px;
-  height: 35px;
+  line-height: 35px;
 }
 .entry-date {
   position: absolute;
@@ -253,6 +296,7 @@
 .service-item {
   width: 50%;
   text-align: center;
+  padding-bottom: 5%;
 }
 .service-link a {
   text-decoration: none;
@@ -262,14 +306,22 @@
   width: 250px;
   padding: 20px;
   border-radius: 5px;
-  margin-bottom: 20%;
-  margin-right: 30%;
-  margin-left: 30%;
+  margin: 0 auto;
 }
 .service-link :hover {
   background-color: #47b39db1;
 }
-
+@media (width<750px) {
+  .service-item {
+    margin: 20px 0;
+    max-width: none;
+    width: 100%;
+  }
+  .service-in {
+    margin: 32px 16px;
+    display: block;
+  }
+}
 .company-item {
   font-size: 16px;
   margin: 46px;
@@ -332,7 +384,7 @@
   padding-bottom: 40px;
 }
 .inquiry-send-button input {
-  background-color: #3b4552;
+  background-color: #031731;
   color: #fff;
   width: 10%;
 }
