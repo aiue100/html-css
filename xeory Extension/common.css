@@ -261,6 +261,7 @@
 .feature-item-link :hover {
   background-color: #ff852d;
 }
+
 .number {
   font-size: 13px;
   width: 50px;
@@ -277,7 +278,30 @@
   font-size: 13px;
   display: block;
 }
-
+@media (width<750px) {
+  .feature-item {
+    display: block;
+    height: auto;
+  }
+  .feature-item:nth-child(even) {
+    margin: 0;
+  }
+  .feature-item-title {
+    text-align: center;
+  }
+  .feature-item-title span {
+    margin: auto;
+  }
+  .contents-title ::after {
+    display: none;
+  }
+  .feature-item-text {
+    margin: auto;
+  }
+  .feature-item-link a {
+    margin: auto;
+  }
+}
 .service-title {
   margin-top: 20%;
   color: #47b39d;
@@ -357,6 +381,19 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (width<750px) {
+  .compny-content-map {
+    display: block;
+  }
+  .company-item {
+    display: block;
+    width: auto;
+  }
+  .company-content {
+    border-style: none;
+  }
+}
+
 .inquiry {
   background-color: #47b39d;
   color: #fff;
