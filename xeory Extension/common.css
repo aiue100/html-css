@@ -252,7 +252,7 @@
   display: block;
   background-color: #ff6c00;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
   width: 100px;
   margin-bottom: 100px;
@@ -264,7 +264,7 @@
 
 .number {
   font-size: 13px;
-  width: 50px;
+  width: 30px;
   height: 50px;
   padding: 16px 0;
   display: flex;
@@ -282,6 +282,7 @@
   .feature-item {
     display: block;
     height: auto;
+    padding-bottom: 10%;
   }
   .feature-item:nth-child(even) {
     margin: 0;
@@ -297,11 +298,21 @@
   }
   .feature-item-text {
     margin: auto;
+    padding: 20px;
   }
   .feature-item-link a {
     margin: auto;
+    width: auto;
+    padding: 5px;
+  }
+  .english {
+    padding: 10px;
+  }
+  .number {
+    width: 30px;
   }
 }
+
 .service-title {
   margin-top: 20%;
   color: #47b39d;
@@ -388,6 +399,7 @@
   .company-item {
     display: block;
     width: auto;
+    margin: auto;
   }
   .company-content {
     border-style: none;
