@@ -9,10 +9,21 @@
   display: flex;
   justify-content: space-between;
 }
+
 .header-title {
   margin: 16px;
   font-size: 20px;
   color: #fff;
+}
+.header-title a {
+  border-bottom: #fff;
+}
+a {
+  color: #fff;
+}
+.header-nav-item a:hover {
+  color: #fff;
+  border-bottom: #fff;
 }
 .header-nav-item a {
   padding: 20px;
@@ -279,6 +290,7 @@
   display: block;
 }
 @media (width<750px) {
+  /* 詳しく見るのボタンが左右くっついてるからそれを開ける */
   .feature-item {
     display: block;
     height: auto;
@@ -415,7 +427,7 @@ iframe {
   }
   .company-title,
   .company-content {
-    padding: 10px;
+    padding: 15px;
   }
   .company-title {
     font-weight: 700;
@@ -493,12 +505,18 @@ iframe {
   width: 10%;
 }
 .inquiry input {
-  border-radius: 3px;
+  border-radius: 5px;
   border: none;
+}
+.inquiry-send-button input {
+  padding: 15px;
 }
 .inquiry textarea {
   border-radius: 3px;
   border: none;
+}
+input {
+  padding: 6px;
 }
 .footer {
   background-color: #031731;
@@ -547,7 +565,7 @@ iframe {
 @media (width<750px) {
   .footer-item-wrap {
     display: block;
-    width: 100%;
+    width: 70%;
   }
   .footer-item {
     padding: 0;
