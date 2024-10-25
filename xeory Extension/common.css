@@ -4,7 +4,7 @@
   font-weight: 100;
 }
 .header {
-  background: #47b39d;
+  background: #41baa4;
   margin: 0px;
   display: flex;
   justify-content: space-between;
@@ -40,8 +40,8 @@ a {
 .menu-button {
   display: none;
   place-items: center;
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   background-color: #3b4552;
 }
 .menu-button svg {
@@ -55,7 +55,7 @@ a {
 .header-nav {
   margin: 0px;
   list-style-type: none;
-  gap: 45px;
+  gap: 5px;
   display: flex;
 }
 @media (width<750px) {
@@ -94,8 +94,8 @@ a {
   margin: 20px;
 }
 .main-discription {
-  width: 100%;
-  max-width: 40%;
+  width: 80%;
+  max-width: 800px;
   color: #fff;
   font-size: 14px;
   margin: 20px;
@@ -219,9 +219,8 @@ a {
     "feature-item-img feature-item-title " auto
     "feature-item-img feature-item-text" 1fr
     "feature-item-img feature-item-link  " auto
-    / 600px 1fr;
+    / 45% 1fr;
   row-gap: 8px;
-  column-gap: 90px;
 
   overflow: hidden;
 }
@@ -234,8 +233,8 @@ a {
     "feature-item-title feature-item-img  " auto
     "feature-item-text feature-item-img " 1fr
     "feature-item-link feature-item-img  " auto
-    / 1fr 600px;
-  margin-left: 10%;
+    / 1fr 45%;
+
   row-gap: 10px;
 }
 .feature-item-img img {
@@ -253,7 +252,7 @@ a {
 }
 .feature-item-text {
   grid-area: feature-item-text;
-  width: 70%;
+
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -288,6 +287,12 @@ a {
   color: #47b39d;
   font-size: 13px;
   display: block;
+}
+.feature-item-title,
+.feature-item-text,
+p.feature-item-link {
+  margin-left: 10%;
+  margin-right: 5%;
 }
 @media (width<750px) {
   /* 詳しく見るのボタンが左右くっついてるからそれを開ける */
@@ -408,7 +413,7 @@ iframe {
   width: 600px;
   height: 470px;
 }
-@media (width<800px) {
+@media (width<1200px) {
   .compny-content-map {
     display: block;
   }
@@ -565,7 +570,7 @@ input {
 @media (width<750px) {
   .footer-item-wrap {
     display: block;
-    width: 70%;
+    width: 100%;
   }
   .footer-item {
     padding: 0;
